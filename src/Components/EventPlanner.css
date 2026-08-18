@@ -1,81 +1,126 @@
 .event-planner-container {
-    max-width: 100vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
+    min-height: 100vh;
     text-align: center;
-    background: linear-gradient(135deg, #fee6f0 25%, transparent 25%) -50px 0,
-                linear-gradient(225deg, #fee6f0 25%, transparent 25%) -50px 0,
-                linear-gradient(315deg, #fee6f0 25%, transparent 25%),
-                linear-gradient(45deg, #fee6f0 25%, transparent 25%);
-    background-size: 100px 100px; /* Adjust the size based on the pattern */
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
+    padding: 30px;
+    background-color: white;
+
+    background-image:
+        linear-gradient(45deg, #fce4ec 25%, transparent 25%),
+        linear-gradient(-45deg, #fce4ec 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #fce4ec 75%),
+        linear-gradient(-45deg, transparent 75%, #fce4ec 75%);
+
+    background-size: 100px 100px;
+    background-position:
+        0 0,
+        0 50px,
+        50px -50px,
+        -50px 0;
+}
+
+/* Title */
+
+.event-planner-container header h1 {
+    font-size: 38px;
     margin-bottom: 20px;
-  }
-  
-  .description p {
-    font-size: 1.2rem;
+}
+
+/* Description */
+
+.description p {
+    font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  .get-started-button {
-    background-color: #f85199;
-    color: #fff;
+}
+
+/* Get Started button */
+
+.get-started-button {
+    background-color: #ec4899;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 12px 25px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .get-started-button:hover {
-    background-color: #d32b74;
-  }
-  
-  .features,
-  .testimonials,
-  .contact,.events_categories {
-    margin-top: 50px;
-  }
-  
-  .features h2,
-  .testimonials h2,
-  .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .features ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .features ul li {
-    font-size: 1.1rem;
+    margin-bottom: 45px;
+}
+
+/* Event categories */
+
+.events_categories {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+}
+
+.event-card {
+    width: 30%;
+    background-color: rgba(180, 180, 180, 0.65);
+}
+
+/* Pink headings */
+
+.event-card h2 {
+    background-color: #ec4899;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    font-size: 22px;
+}
+
+/* Lists */
+
+.event-card ul {
+    list-style: none;
+    padding: 8px 10px;
+    margin: 0;
+}
+
+.event-card li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Features */
+
+.features {
+    margin-top: 40px;
+}
+
+/* Testimonials */
+
+.testimonials {
+    margin-top: 40px;
+}
+
+.testimonials > div {
     margin-bottom: 10px;
-  }
-  
-  .testimonial {
-    margin-bottom: 20px;
-  }
-  
-  .testimonial p {
-    font-style: italic;
-  }
-  
-  .testimonial .author {
+}
+
+/*author */
+.author {
     font-weight: bold;
-  }
-  
-  .contact form {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Contact */
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
   }
-  
-  .contact input,
+
+.contact input,
   .contact textarea {
     margin-bottom: 15px;
     padding: 10px;
@@ -100,36 +145,4 @@
   
   .submit-button:hover {
     background-color: #d32b74;
-  }
-  
-  footer {
-    margin-top: 50px;
-    font-size: 0.9rem;
-  }
-  
-  .events_categories h1{
-    background-color: gray;
-    text-align: center;
-  }
-.events_categories{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    
-}
-.events_categories ul{
-    background-color: rgba(0,0,0,0.2);
-    width: 270px;
-    /* padding: 0 10px; */
-}
-  .events_categories ul h2{
-    background-color: #e46a9d;
-    text-align: center;
-    padding: 5px 10px;
-    color: white;
-  }
-  .events_categories ul li{
-    list-style-type: none;
-    font-size: 1.1rem;
-    line-height: 24px;
   }
